@@ -40,7 +40,8 @@
 #include "mjpc/tasks/shadow_reorient/hand.h"
 #include "mjpc/tasks/swimmer/swimmer.h"
 #include "mjpc/tasks/walker/walker.h"
-#include "mjpc/tasks/reddog/reddog.h"
+// #include "mjpc/tasks/reddog/reddog.h"
+#include "mjpc/tasks/bigreddog/bigreddog.h"
 
 namespace mjpc {
 
@@ -70,8 +71,10 @@ std::vector<std::shared_ptr<Task>> GetTasks() {
       std::make_shared<QuadrupedHill>(),
       std::make_shared<Swimmer>(),
       std::make_shared<Walker>(),
-      std::make_shared<RedDogFlat>(), // Add RedDog here
-      std::make_shared<RedDogHill>(), // Add RedDog here
+      // std::make_shared<RedDogFlat>(), // Add RedDog here
+      // std::make_shared<RedDogHill>(), // Add RedDog here
+      std::make_shared<BigRedDogFlat>(), // Add BigRedDog here
+      std::make_shared<BigRedDogHill>(), // Add BigRedDog here
   };
 }
 }  // namespace mjpc

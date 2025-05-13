@@ -82,8 +82,10 @@ add_library(
   tasks/swimmer/swimmer.h
   tasks/walker/walker.cc
   tasks/walker/walker.h
-  tasks/reddog/reddog.cc  # Add RedDog source
-  tasks/reddog/reddog.h  # Add RedDog header
+  # tasks/reddog/reddog.cc  # Add RedDog source
+  # tasks/reddog/reddog.h  # Add RedDog header
+  tasks/bigreddog/bigreddog.cc  # Add RedDog source
+  tasks/bigreddog/bigreddog.h  # Add RedDog header
   planners/planner.cc
   planners/planner.h
   planners/policy.h
